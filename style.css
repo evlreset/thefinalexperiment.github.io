@@ -1,34 +1,77 @@
+@import url('https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400..800;1,400..800&family=Splash&display=swap');
 body{
+	background-image: url(assets/bg2.png);
 	background-color: lightgray;
 	margin: 0px;
+	font-family: "Eb Garamond";
 }
 nav{
-	background-color: white;
+	background-color: floralwhite;
 	height: 50px;
 	width: 100%;
 	font-size: 24px;
+	font-family: "Splash";
 	display: flex;
 	justify-content: space-evenly;
 	align-items: center;
 }
-a{
+.dropbtn {
+	background-color: floralwhite;
+	font-family: "Splash";
+  color: black;
+  font-size: 24px;
+  border: none;
+  cursor: pointer;
+  transition-duration: 0.5s;
+}
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: floralwhite;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+.dropdown-content a {
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+
+.dropdown:hover .dropdown-content {
+	border-radius: 15%;
+  	display: block;
+}
+.dropdown:hover .dropbtn {color: darkgray;}
+nav a{
 	text-decoration: none;
 	color: black;
+	transition-duration: 0.5s;
 }
-a:hover {
+nav a:hover {
 	color: lightgray;
 }
 .header{
+	background-image: url(assets/titlebg.png);
+	background-size: cover;
 	width: 100%;
-	background-color: #333333;
-	height: 300px;
-	color: white;
+	height: 400px;
+	color: floralwhite;
 	display: flex;
 	align-items: flex-end;
+	font-family: "Splash";
 }
 .title{
 	font-size: 72px;
-	margin: 20px;
+	padding-bottom: 20px;
+	margin-bottom: 20px;
+	width: 100%;
+	height: 100px;
 }
 .bars{
 	height: 15px;
