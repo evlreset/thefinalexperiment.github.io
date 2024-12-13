@@ -1,7 +1,10 @@
 @import url('https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400..800;1,400..800&family=Splash&display=swap');
+html{
+	scroll-behavior: smooth;
+}
 body{
 	background-image: url(assets/bg2.png);
-	background-color: lightgray;
+	background-color: floralwhite;
 	margin: 0px;
 	font-family: "Eb Garamond";
 }
@@ -44,18 +47,20 @@ nav{
 }
 
 .dropdown:hover .dropdown-content {
-	border-radius: 15%;
+	border-radius: 15px;
   	display: block;
 }
 .dropdown:hover .dropbtn {color: darkgray;}
-nav a{
+
+a{
 	text-decoration: none;
 	color: black;
-	transition-duration: 0.5s;
+	transition-duration: 0.25s;
 }
-nav a:hover {
+a:hover {
 	color: lightgray;
 }
+
 .header{
 	background-image: url(assets/titlebg.png);
 	background-size: cover;
@@ -72,9 +77,68 @@ nav a:hover {
 	margin-bottom: 20px;
 	width: 100%;
 	height: 100px;
+	font-family: "Splash";
 }
 .bars{
 	height: 15px;
 	background-color: black;
 	width: 100%;
+}
+.wrapper{
+	width: 1200px;
+	margin: auto;
+	margin-top: 30px;
+	height: auto;
+}
+.flexbox{
+	display: flex;
+	justify-content: space-between;
+	width: auto;
+	height: auto;
+	flex-wrap: wrap;
+
+}
+.leftbox{
+	width:550px;
+	padding: 10px;
+	border-radius: 15px;
+	background-color: floralwhite;
+	height: auto;
+	float: left;
+	margin: 10px;
+}
+.grid{
+	width: 250px;
+	height: 250px;
+	background-color: floralwhite;
+	border-radius: 15px;
+	margin: 10px;
+	padding: 10px;
+	background-size: cover;
+}
+#topBtn{
+	width: 100px;
+	height: 40px;
+	background-color: floralwhite;
+	z-index: 98;
+	position: fixed;
+	bottom: 20px;
+	right: 20px;
+	border-radius: 15px;
+	align-content: center;
+	font-size: 18px;
+	border: none;
+	font-family: "EB Garamond";
+}
+#topBtn:hover{
+	opacity: 50%;
+}
+.hide{
+	color: black;
+	background-color: floralwhite;
+	width: 100%;
+	height: 100%;
+	z-index: 99;
+	position: fixed;
+	
 }
